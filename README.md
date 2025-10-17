@@ -1,61 +1,103 @@
-# Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
+# Homebnb
+> A modern [Next.js](https://nextjs.org/) web application for a full-stack Airbnb clone, built with React, TypeScript, and Tailwind CSS.
 
-![Copy of Fullstack Twitter Clone (8)](https://user-images.githubusercontent.com/23248726/229031522-64a49ad0-66f7-4ea8-94a8-f64a0bb56736.png)
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![NextAuth.js](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=next-auth&logoColor=white)
 
+---
 
-This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+## 📸 Preview
 
-[VIDEO TUTORIAL](https://youtu.be/c_-b_isI4vg)
+![Project Screenshot](./public/project-mockup.png)
 
-Features:
+---
 
-- Tailwind design
-- Tailwind animations and effects
-- Full responsiveness
-- Credential authentication
-- Google authentication
-- Github authentication
-- Image upload using Cloudinary CDN
-- Client form validation and handling using react-hook-form
-- Server error handling using react-toast
-- Calendars with react-date-range
-- Page loading state
-- Page empty state
-- Booking / Reservation system
-- Guest reservation cancellation
-- Owner reservation cancellation
-- Creation and deletion of properties
-- Pricing calculation
-- Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms
-    - For example we will filter out properties that have a reservation in your desired date range to travel
-- Favorites system
-- Shareable URL filters
-    - Lets say you select a category, location and date range, you will be able to share URL with a logged out friend in another browser and they will see the same results
-- How to write POST and DELETE routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle files like error.tsx and loading.tsx which are new Next 13 templating files to unify loading and error handling
-- How to handle relations between Server and Child components!
+## ✨ Features
 
-### Prerequisites
+- **User Authentication:** Secure credential, Google, and Github authentication.
+- **Property Listings:** Users can create, view, and delete property listings.
+- **Advanced Search:** Search for properties by category, date range, location, and number of guests.
+- **Booking System:** Users can book properties and view their reservations.
+- **Favorites:** Users can add and remove properties from their favorites.
+- **Image Uploads:** Upload property images to Cloudinary.
+- **Responsive Design:** Fully accessible on desktop and mobile devices.
 
-**Node version 14.x**
+---
 
-### Cloning the repository
+## 🚀 Live Demo
 
-```shell
-git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
+Check out the live version here:
+**[🔗 Live Project](https://airbnb-clone-jkv21.vercel.app/)**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) `13.2.4`
+- **UI Library:** [React](https://react.dev/) `18.2.0`
+- **Language:** [TypeScript](https://www.typescriptlang.org/) `5.0.2`
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) `3.2.7`
+- **ORM:** [Prisma](https://www.prisma.io/) `4.11.0`
+- **Database:** [MongoDB](https://www.mongodb.com/)
+- **Authentication:** [NextAuth.js](https://next-auth.js.org/) `4.20.1`
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## 📁 Project Structure
+
+```bash
+├─ app/                # Next.js App Router pages & API routes
+│  ├─ (root)/          # Root layout and pages
+│  ├─ api/             # API routes
+│  ├─ components/      # Reusable UI components
+│  ├─ hooks/           # Custom React hooks
+│  ├─ libs/            # Utility functions / helpers
+│  └─ ...
+├─ pages/              # Next.js pages directory
+│  └─ api/             # API routes for authentication
+├─ prisma/             # Prisma schema
+├─ public/             # Static assets (images, icons, etc.)
+└─ ...
 ```
 
-### Install packages
+---
 
-```shell
-npm i
-```
+## ⚙️ Getting Started
 
-### Setup .env file
+### ✅ Prerequisites
 
+* Node.js (v14.x or later)
+* npm / yarn / pnpm
 
-```js
+### 🧰 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jkvdev/airbnb.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd airbnb
+   ```
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### 🔐 Environment Variables
+
+This project requires environment variables. Create a `.env` file in the root and add:
+
+```env
 DATABASE_URL=
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
@@ -64,23 +106,42 @@ GITHUB_SECRET=
 NEXTAUTH_SECRET=
 ```
 
-### Setup Prisma
+### ▶️ Running the Development Server
 
-```shell
-npx prisma db push
-
-```
-
-### Start the app
-
-```shell
+```bash
 npm run dev
 ```
 
-## Available commands
+Visit [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Running commands with npm `npm run [command]`
+---
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+## 💡 Key Learnings & Challenges
+
+* Used **server-side rendering (SSR)** for optimal performance.
+* Implemented the new **Next.js 13 App Router**.
+* Integrated a **Prisma ORM** to manage the MongoDB database.
+* Secured the application with **NextAuth.js** for user authentication.
+* Focused on accessibility and responsive design across devices.
+
+---
+
+## 🗺️ Roadmap
+
+* [ ] Implement user reviews and ratings
+* [ ] Add a messaging system between users
+* [ ] Improve search filters and sorting options
+* [ ] Add admin dashboard for managing users and listings
+* [ ] Implement unit and integration tests
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Contact
+
+**Valentin Costea** – [Portfolio](https://jkvdev.com) – [jkv21contact@gmail.com](mailto:jkv21contact@gmail.com)
