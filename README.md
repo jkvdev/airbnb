@@ -32,7 +32,7 @@
 ## 🚀 Live Demo
 
 Check out the live version here:
-**[🔗 Live Project](https://airbnb-clone-jkv21.vercel.app/)**
+**[🔗 Live Project](https://airbnb-clone-jkv21s-projects.vercel.app/)**
 
 ---
 
@@ -104,6 +104,7 @@ GOOGLE_CLIENT_SECRET=
 GITHUB_ID=
 GITHUB_SECRET=
 NEXTAUTH_SECRET=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 ```
 
 ### ▶️ Running the Development Server
