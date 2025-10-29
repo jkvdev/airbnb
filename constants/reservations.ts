@@ -2,7 +2,7 @@ import { Reservation } from '@prisma/client';
 
 export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'endDate'> & { createdAt: string; startDate: string; endDate: string })[] = [
   {
-    id: 'res-1',
+    id: '6532d8bde3a9a9e42d35a4d0',
     listingId: '6532d8bde3a9a9e42d35a4c0', 
     userId: '68f3c54e0cb4ba3730a4a942', 
     startDate: '2024-03-10T00:00:00.000Z',
@@ -11,7 +11,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2024-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-2',
+    id: '6532d8bde3a9a9e42d35a4d1',
     listingId: '6532d8bde3a9a9e42d35a4c1', 
     userId: '6532d8a6e3a9a9e42d35a4c6', 
     startDate: '2024-04-01T00:00:00.000Z',
@@ -20,7 +20,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2024-01-15T12:00:00.000Z',
   },
   {
-    id: 'res-3',
+    id: '6532d8bde3a9a9e42d35a4d2',
     listingId: '6532d8bde3a9a9e42d35a4c4',
     userId: '68f3c54e0cb4ba3730a4a942', 
     startDate: '2024-05-20T00:00:00.000Z',
@@ -29,7 +29,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2024-02-01T12:00:00.000Z',
   },
   {
-    id: 'res-4',
+    id: '6532d8bde3a9a9e42d35a4d3',
     listingId: '6532d8bde3a9a9e42d35a4c1',
     userId: '6532d8a6e3a9a9e42d35a4c6',
     startDate: '2025-01-01T12:00:00.000Z',
@@ -38,7 +38,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-5',
+    id: '6532d8bde3a9a9e42d35a4d4',
     listingId: '6532d8bde3a9a9e42d35a4c5',
     userId: '6532d8a6e3a9a9e42d35a4c5',
     startDate: '2025-02-10T12:00:00.000Z',
@@ -47,7 +47,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-6',
+    id: '6532d8bde3a9a9e42d35a4d5',
     listingId: '6532d8bde3a9a9e42d35a4c0',
     userId: '6532d8a6e3a9a9e42d35a4cd',
     startDate: '2025-03-20T12:00:00.000Z',
@@ -56,7 +56,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-7',
+    id: '6532d8bde3a9a9e42d35a4d6',
     listingId: '6532d8bde3a9a9e42d35a4c9',
     userId: '6532d8a6e3a9a9e42d35a4ca',
     startDate: '2025-04-05T12:00:00.000Z',
@@ -65,7 +65,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-8',
+    id: '6532d8bde3a9a9e42d35a4d7',
     listingId: '6532d8bde3a9a9e42d35a4c2',
     userId: '6532d8a6e3a9a9e42d35a4cb',
     startDate: '2025-05-15T12:00:00.000Z',
@@ -74,7 +74,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-9',
+    id: '6532d8bde3a9a9e42d35a4d8',
     listingId: '6532d8bde3a9a9e42d35a4c0',
     userId: '6532d8a6e3a9a9e42d35a4cd',
     startDate: '2025-01-01T12:00:00.000Z',
@@ -83,7 +83,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-10',
+    id: '6532d8bde3a9a9e42d35a4d9',
     listingId: '6532d8bde3a9a9e42d35a4c1',
     userId: '6532d8a6e3a9a9e42d35a4c6',
     startDate: '2025-01-02T12:00:00.000Z',
@@ -92,7 +92,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-11',
+    id: '6532d8bde3a9a9e42d35a4da',
     listingId: '6532d8bde3a9a9e42d35a4c2',
     userId: '6532d8a6e3a9a9e42d35a4cb',
     startDate: '2025-01-03T12:00:00.000Z',
@@ -101,7 +101,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-12',
+    id: '6532d8bde3a9a9e42d35a4db',
     listingId: '6532d8bde3a9a9e42d35a4c3',
     userId: '6532d8a6e3a9a9e42d35a4c7',
     startDate: '2025-01-04T12:00:00.000Z',
@@ -110,7 +110,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-13',
+    id: '6532d8bde3a9a9e42d35a4dc',
     listingId: '6532d8bde3a9a9e42d35a4c4',
     userId: '6532d8a6e3a9a9e42d35a4cc',
     startDate: '2025-01-05T12:00:00.000Z',
@@ -119,7 +119,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-14',
+    id: '6532d8bde3a9a9e42d35a4dd',
     listingId: '6532d8bde3a9a9e42d35a4c5',
     userId: '6532d8a6e3a9a9e42d35a4c5',
     startDate: '2025-01-06T12:00:00.000Z',
@@ -128,7 +128,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-15',
+    id: '6532d8bde3a9a9e42d35a4de',
     listingId: '6532d8bde3a9a9e42d35a4c6',
     userId: '6532d8a6e3a9a9e42d35a4c6',
     startDate: '2025-01-07T12:00:00.000Z',
@@ -137,7 +137,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-16',
+    id: '6532d8bde3a9a9e42d35a4df',
     listingId: '6532d8bde3a9a9e42d35a4c7',
     userId: '6532d8a6e3a9a9e42d35a4c7',
     startDate: '2025-01-08T12:00:00.000Z',
@@ -146,7 +146,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-17',
+    id: '6532d8bde3a9a9e42d35a4e0',
     listingId: '6532d8bde3a9a9e42d35a4c8',
     userId: '6532d8a6e3a9a9e42d35a4c9',
     startDate: '2025-01-09T12:00:00.000Z',
@@ -155,7 +155,7 @@ export const mockReservations: (Omit<Reservation, 'createdAt' | 'startDate' | 'e
     createdAt: '2025-01-01T12:00:00.000Z',
   },
   {
-    id: 'res-18',
+    id: '6532d8bde3a9a9e42d35a4e1',
     listingId: '6532d8bde3a9a9e42d35a4c9',
     userId: '6532d8a6e3a9a9e42d35a4ca',
     startDate: '2025-01-10T12:00:00.000Z',
