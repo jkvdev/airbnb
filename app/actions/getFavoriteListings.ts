@@ -1,4 +1,5 @@
 import prisma from "@/app/libs/prismadb";
+import { mockListings } from '@/constants';
 
 import getCurrentUser from "./getCurrentUser";
 
@@ -25,6 +26,18 @@ export default async function getFavoriteListings() {
 
     return safeFavorites;
   } catch (error: any) {
-    throw new Error(error);
+    console.error("Database error fetching favorite listings, falling back to mock data:", error);
+
+    const currentUser = await getCurrentUser(); 
+    if (!currentUser) {
+      return []; 
+    }
+
+    const favoriteIds = currentUser.favoriteIds || [];
+    const filteredMockFavorites = mockListings.filter(listing =>
+      favoriteIds.includes(listing.id)
+    );
+
+    return filteredMockFavorites;
   }
 }
